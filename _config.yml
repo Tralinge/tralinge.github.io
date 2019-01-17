@@ -1,3 +1,4 @@
 name: Tralinge
 markdown: kramdown
+permalink: /news/:year/:month/:day/:title
 theme: jekyll-theme-architect
