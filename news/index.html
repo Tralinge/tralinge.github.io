@@ -21,7 +21,7 @@ title: News
 <div class="pagination">
   <span class="page_number ">
   Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
+  </span><br>
 	
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous |</a>
@@ -30,9 +30,9 @@ title: News
   {% endif %}
   
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next"> Next</a><br>
+    <a href="{{ paginator.next_page_path }}" class="next"> Next</a>
   {% else %}
-    <span class="next "> Next</span><br>
+    <span class="next "> Next</span>
   {% endif %}
   
 </div>
