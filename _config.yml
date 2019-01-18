@@ -3,6 +3,5 @@ markdown: kramdown
 permalink: /news/:year/:month/:day/:title
 paginate: 5
 paginate_path: "/news/page:num/"
-plugins:
-  - jekyll-sitemap
+
 theme: jekyll-theme-architect
