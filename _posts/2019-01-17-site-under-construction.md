@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tralinge Site Under Construction"
-date: 2019-01-18
+date: 2019-01-17
 ---
 
 I'm currently trying to incorporate all the necessary elements to the page; 
