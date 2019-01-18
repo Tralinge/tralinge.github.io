@@ -1,4 +1,6 @@
 name: Tralinge
 markdown: kramdown
 permalink: /news/:year/:month/:day/:title
+paginate: 2
+paginate_path: "/blog/page:num/"
 theme: jekyll-theme-architect
