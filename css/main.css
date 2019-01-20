@@ -29,10 +29,11 @@ p {
     line-height: 1.4em;
     color: #333;
     }
-td {
+th, td {
     font-size: 1.2em;
     text-align: justify;
     vertical-align: top;
+    padding: 15px;
     }    
 footer {
     border-top: 1px solid #d5d5d5;
