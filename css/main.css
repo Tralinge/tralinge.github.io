@@ -1,45 +1,48 @@
-head {
-    background-image: url("/media/background/Background texture.jpg");  
-    }
 body {
     margin: 60px auto;
     width: 70%;
-    background-image: url("/media/background/Background texture.jpg");
-    background-image: url("media/background/Background texture.jpg");
     }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
     }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
     }
+
 a {
     text-decoration: none;
     color: #999;
     }
+
 a:hover {
     text-decoration: underline;
     }
+
 h1 {
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     }
+
 p {
     font-size: 1.2em;
     text-align: justify;
     line-height: 1.4em;
     color: #333;
     }
+
 th, td {
     font-size: 1.2em;
     text-align: justify;
     vertical-align: top;
     padding: 15px;
     }    
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
