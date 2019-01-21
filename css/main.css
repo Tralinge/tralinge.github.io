@@ -1,9 +1,10 @@
 head {
-    background-image: /media/background/Background texture.jpg;  
+    background-image: url(/media/background/Background texture.jpg);  
     }
 body {
     margin: 60px auto;
     width: 70%;
+    background-image: url(/media/background/Background texture.jpg);
     }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
