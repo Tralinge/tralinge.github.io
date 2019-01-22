@@ -20,12 +20,13 @@ a {
     color: #999;
     }
 
-a.home {
-    color: black;
-    }
-
 a:hover {
     text-decoration: underline;
+    }
+
+a.home {
+    text-decoration: none;
+    color: black;
     }
 
 h1 {
