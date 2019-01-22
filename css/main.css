@@ -38,7 +38,7 @@ a.nav {
       display: inline-block;
     }
 
-a:hover, a:active {
+a.nav:hover, a.nav:active {
   background-color: red;
   color: white;
 }
