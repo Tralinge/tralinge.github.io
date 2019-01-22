@@ -28,6 +28,21 @@ a.home {
     text-decoration: none;
     color: black;
     }
+a.nav {
+      background-color: white;
+      color: black;
+      border: 2px solid red;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+a:hover, a:active {
+  background-color: red;
+  color: white;
+}
+    
 
 h1 {
     font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif; 
