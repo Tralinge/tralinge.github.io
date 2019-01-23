@@ -4,6 +4,10 @@
 			<!-- link to analytics - not yet functional?-->
 			<link href="/_includes/analytics.html">
 			
+			<!-- set up -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
 			<title>{{ page.title }}</title>
 			
 			<!-- link to main stylesheet -->
@@ -45,12 +49,29 @@
 				<li class="nava"><a href="/news" class="nava">News</a></li>
 				<li class="nava"><a href="/about" class="nava">About</a></li>
 	    		</ul>
-	    					
-			<div class="container">
+	    		
+			<div class="row">
+  <div class="column side">
+    <h2>Left Side</h2>
+    <p>Side</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <div class="container">
 			
 			{{ content }}
 			
 			</div><!-- /.container -->
+	</div>
+  
+  <div class="column side">
+    <h2>Right Side</h2>
+    <p>Side</p>
+  </div>
+</div>
+			
+			
 			<footer>
 	    		<ul>
 	        		<!-- Should this go to the far right??? -->
