@@ -99,8 +99,15 @@
    li a.nava:hover {
       background-color: rgb(153, 235, 255);
       }
+   
+/*I don't think I need the "::after"*/
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+      } 
 
-   img.rfimg {
+    img.rfimg {
       float: right;
       }
 
