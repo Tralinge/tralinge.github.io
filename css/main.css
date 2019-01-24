@@ -98,5 +98,9 @@
 
     li a.nava:hover {
         background-color: rgb(153, 235, 255);
+       
+    img.rfimg {
+       float: right;
+       }
 
 </style>
