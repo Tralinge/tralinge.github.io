@@ -100,7 +100,7 @@
         background-color: rgb(153, 235, 255);
        
     img.rfimg {
-       float: right;
+       float: left;
        }
 
 </style>
