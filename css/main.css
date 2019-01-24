@@ -4,7 +4,8 @@
         }
 
     body {
-        margin: 0;
+            margin: 60px auto;
+            width: 70%;;
         }    
 
     footer ul {
@@ -97,28 +98,5 @@
 
     li a.nava:hover {
         background-color: rgb(153, 235, 255);
-        
-        /* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-}
-
-/* Left and right column */
-.column.side {
-  width: 10%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 80%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 </style>
