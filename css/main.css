@@ -191,4 +191,8 @@
     img.circle {
       border-radius: 50%;
       }
+
+    img.rounded {
+      border-radius:30%;
+      }
 </style>
