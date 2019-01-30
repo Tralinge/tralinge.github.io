@@ -188,4 +188,7 @@
       float: left;
       }
 
+    img.circle {
+      border-radius: 50%;
+      }
 </style>
