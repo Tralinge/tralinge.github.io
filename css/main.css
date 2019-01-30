@@ -129,7 +129,7 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(121, 210, 166);
+  background-color: rgb(0, 153, 153);
   color: white;
 }
 
