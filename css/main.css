@@ -69,64 +69,45 @@
       list-style: none;
       }
 
-   ul.nava {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgb(245, 245, 245);
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 0;
-      }
-
-   li {
-      float: right;
-      }
-
-   li.nava {
-      float: left;
-      }
-
-   li a.nava {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      }
-
-   li a.nava:hover {
-      background-color: rgb(153, 235, 255);
-      }
-   
-/*Dropdown Nav*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* top nav dropdown */
+.topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(245, 245, 245);
 }
 
-li {
+.topnav a {
   float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
+  display: block;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.active {
+  background-color: rgb(153, 235, 255);
+  color: white;
 }
 
-li.dropdown {
-  display: inline-block;
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
 .dropdown-content {
@@ -139,6 +120,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
+  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -146,10 +128,49 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(121, 210, 166);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 /*I don't think I need the "::after"*/
