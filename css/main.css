@@ -8,14 +8,14 @@
       width: 90%;
       }    
 
-   footer ul {
+   footer ul, ul.bottomlinkul {
       font-family:'Helvetica', 'Arial', 'Sans-Serif';
       padding: 0px;
       list-style: none;
       font-weight: bold;
       }
 
-   footer ul li {
+   footer ul li, ul li.bottomlinkli {
       display: inline;
       margin-right: 20px;
       }
