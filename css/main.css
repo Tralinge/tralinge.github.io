@@ -15,7 +15,7 @@
       font-weight: bold;
       }
 
-   footer ul li, ul li.bottomlinkli {
+   footer ul li, ul.bottomlinkul li {
       display: inline;
       margin-right: 20px;
       }
