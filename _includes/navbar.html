@@ -1,14 +1,28 @@
-<ul class="nava">
-  <li class="nava"><a href="https://www.tralinge.com" class="nava">Home</a></li>
-  <li class="nava"><a href="https://www.tralinge.com/chinese_corner" class="nava">Chinese Corner</a></li>
-  <li class="nava"><a href="https://www.tralinge.com/english_corner" class="nava">English Corner</a></li>    
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Chinese Corner</a>
+  <a href="#contact">English Corner</a>
+  <div class="dropdown">
+    <button class="dropbtn">Spanish Corner 
+      <i class="fa fa-caret-down"></i>
+    </button>
     <div class="dropdown-content">
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
-  </li>
-  <li class="nava"><a href="https://www.tralinge.com/spanish_corner" class="nava">Spanish Corner</a></li>
-  <li class="nava"><a href="https://www.tralinge.com/news" class="nava">News</a></li>
-  <li class="nava"><a href="https://www.tralinge.com/about" class="nava">About</a></li>
-</ul>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
