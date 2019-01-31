@@ -180,6 +180,11 @@
       display: table;
       } 
 
+    img {
+      width: 100%;
+      height: auto;
+      }
+
     img.rfimg {
       float: right;
       }
