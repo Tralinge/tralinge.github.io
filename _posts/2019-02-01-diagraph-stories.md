@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New Diagraph Stories and Website Updates"
-date: 2019-01-16
+date: 2019-02-01
 ---
 It's been awhile since my last post. I've been working hard on the site, making it more 
 responsive to other forms of technology, not just a laptop. I was making several worksheets
