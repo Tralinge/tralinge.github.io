@@ -110,7 +110,7 @@
         margin: 0;
         }
 
-.dropdown-content {
+    .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
@@ -173,7 +173,7 @@
             }
         }
 
-/*I don't think I need the "::after"*/
+/* Images - I don't think I need the "::after" */
     .clearfix::after {
       content: "";
       clear: both;
@@ -196,26 +196,6 @@
       border-radius: 30%;
       }
 
-/*pagination*/
-    .pagination {
-        display: inline-block;
-        }
+/* automatic pagination? */
 
-    .pagination a {
-        color: black;
-        float: left;
-        padding: 8px 16px;
-        text-decoration: none;
-        transition: background-color .3s;
-        border: 1px solid #ddd;
-        margin: 0 4px;
-        }
-
-    .pagination a.active {
-        background-color: #4CAF50;
-        color: white;
-        border: 1px solid #4CAF50;
-        }
-
-    .pagination a:hover:not(.active) {background-color: #ddd;}
 </style>
