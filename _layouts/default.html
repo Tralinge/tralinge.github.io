@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<!-- link to analytics - not yet functional?-->
-			<link href="/_includes/analytics.html">
+			<!-- analytics -->
 			{% include analytics.html %}
 			
 			<!-- set up -->
@@ -51,18 +50,12 @@
 
 				{{ content }}
 
-			</div><!-- /.container -->
-			
-			
-				{% include site_index.html %}
-			
+			</div>
 			
 			<footer>
-	    			<ul>
-					<li><a href="mailto:tralinge@gmail.com">Contact Tralinge</a></li>
-					<li><a href="https://www.tralinge.com">Home</a></li> 
-					<li><a href="https://www.tralinge.com/sitemap.xml">Site Map</a></li>
-				</ul>
+				{% include site_index.html %}
+				
+				{% include footer.html %}
 			</footer>
 		</body>
 	</html>
