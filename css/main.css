@@ -15,11 +15,6 @@
       font-weight: bold;
       }
 
-   footer ul li, ul.bottomlinkul li {
-      display: inline;
-      margin-right: 20px;
-      }
-
    a {
       text-decoration: none;
       color: #999;
