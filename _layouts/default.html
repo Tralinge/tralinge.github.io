@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html>
+	<html lang="en">
 		<head>
 			<!-- analytics -->
 			{% include analytics.html %}
@@ -8,36 +8,44 @@
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			
-			<!-- fonts -->
-			<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
-			
 			<title>{{ page.title }}</title>
 			
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			
 			<!-- favicon -->
-			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">	
+			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+						
+			<style>
+				.tralinge-top{
+  					font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+					font-size: 4em;
+					font-style: italic;
+					font-weight: bold;
+					color: black;
+					line-height: 1.1;
+					text-shadow: 1.5px 1px grey;
+					}
+				.motto{
+					font-family: "Segoe UI, Arial, san-serif";
+				    	font-size: 1.5em;
+				    	}
+			</style>
+			
 		</head>
 		
 		<body style="position: relative; min-height: 100%; top: 0px;">	
-			<header>
-				<div style="font-family: 'Gochi Hand', cursive, serif; 
-						  font-size: 4em; line-height: 1.1; color: black; text-shadow: 1.5px 1px grey; 
-					    		position: absolute;">
-					<a href="https://www.tralinge.com" style="text-decoration: none; color: black;">Tralinge</a>
-					<img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan lin ge" width="100">
-				</div>
+			<div class="tralinge-top">
+				<a href="https://www.tralinge.com" class="home">Tralinge</a>
+				<img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan lin ge" width="100">
+			</div>
 			
-				<div style="font-family: 'Segoe UI', Arial, san-serif; font-size: 1.5em; position: relative; top:60px;">
-					<p>Culture Based Language Learning</p>
-				</div>
-			</header>		
-			
-				
+			<div class="motto" style="font-family:'Segoe UI',Arial,sans-serif">
+					Culture Based Language Learning
+			</div>		
+					
 			{% include navbar.html %}
 	    		
-			
 			<div class="container">
 
 				{{ content }}
