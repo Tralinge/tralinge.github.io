@@ -8,11 +8,6 @@
         width: 90%;
         }    
 
-      .container{
-            position: relative;
-              top: 20px;
-          }
-
     footer ul { 
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         padding: 0px;
@@ -73,9 +68,7 @@
     .topnav {
         overflow: hidden;
         background-color: rgb(245, 245, 245);
-        position: relative;
-        top: 40px;
-      }
+        }
 
     .topnav a {
         float: left;
