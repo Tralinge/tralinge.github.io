@@ -68,7 +68,9 @@
     .topnav {
         overflow: hidden;
         background-color: rgb(245, 245, 245);
-        }
+        position: relative;
+        top: 40px;
+      }
 
     .topnav a {
         float: left;
