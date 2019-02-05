@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>lingo2world</title>
+            <meta charset="utf-8">
+            
+        
+        <style> 
+
+            html { 
+                background: url(https://static.wixstatic.com/media/a97014d3cac6454b822f786b7d1f2878.jpg/v1/fill/w_1920,h_1063,al_c,q_85,usm_0.66_1.00_0.01/a97014d3cac6454b822f786b7d1f2878.webp) 
+                    no-repeat center fixed; 
+                background-size: cover;
+                }
+          	body { 
+                color: black;
+                white-space: nowrap;
+                overflow: auto;
+                }
+                
+            .item1 { grid-area: name; }
+            .item2 { grid-area: header; }
+            .item3 { grid-area: left; }
+            .item4 { grid-area: main; }
+            .item5 { grid-area: right; }
+            .item6 { grid-area: footer; }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'name name header header header header'
+                  'left main main main main right'
+                  'footer footer footer footer footer footer';
+                grid-gap: 10px;
+                padding: 10px;
+           		}
+
+          	.grid-container > div {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+              	}
+         
+            .topnav {
+                overflow: hidden;
+                }
+            .topnav a {
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(128, 128, 128);
+                font-size: 13px;
+                font-weight: bold;
+                }
+            .topnav a:hover {
+                color: rgb(99, 209, 211);
+                }
+          	.button { 
+                border: none;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px 4px;
+                cursor: pointer;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                font-size: 14px;
+                white-space: normal;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+              	}
+            .button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+          	.button1 {
+                background-color: rgb(232, 52, 84);
+                }
+          	.button1:hover {
+            	background-color: rgb(207, 23, 57);
+          		}
+          	.button2 {
+                background-color: rgb(210, 203, 39);
+          		}
+          	.button2:hover {
+            	background-color: rgb(172, 168, 32);
+          		}
+          	.button3 {
+                background-color: rgb(99, 209, 211);
+              	}
+          	.button3:hover {
+            	background-color: rgb(56, 197, 199);
+          		}
+                
+        </style>       
+    </head>
+   
+    <body>
+        
+
+<div class="grid-container">
+  <div class="item1">
+  	<div class="nametag" style="line-height: 0.7; margin: 30px 0px 0px 50px;">
+      <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.1em;">Yanglin Lu</h1>
+      <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.3em;">卢阳琳</h1>
+      <h3 style="font-size: 0.6em;">Language Teacher and Educator</h3>
+  	</div>
+  </div>
+  
+  <!-- header -->
+  <div class="item2">
+    
+    <div class="topnav" style="margin-top: 80px;">
+      <a href="#">HOME</a>
+      <a href="#">RESUME</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">STUDENTS SAY</a>
+      <a href="#">CONTACT</a>
+    </div>
+    </div>
+  
+  <!-- left margin -->
+  <div class="item3"></div>
+  
+  <!-- main content -->
+  <div class="item4">
+  	<div class="content">
+                <img src="https://static.wixstatic.com/media/c728ec_22dc2d118e0d4069b5604dab6c3a0cca~mv2.jpg/v1/crop/x_0,y_102,w_960,h_944/fill/w_483,h_475,al_c,q_80,usm_0.66_1.00_0.01/IMG_7900_edited.webp" width="386" height="380" style="border-radius:50%; float: left; margin: 0px 50px"></image>
+               
+                <h1 style="font-size: 2em; line-height: 0.5em;">你好！Hello!</h1>
+                <p style="font-size: 1.5em; line-height: 0.5em;">a bit about me:</p>
+                <div style="text-align: center;">
+                <p style="font-size: 0.5em; display: inline-block; text-align: left; line-height: 1.3em;">Currently a graduate student and a team teacher<br> dedicated to language education. Strive to empower<br> students and make the world a better place!<br><br><br></p>
+                </div>
+                
+          		<button class="button button1">MY RESUME</button>
+                <button class="button button2">MY SKILLS</button>
+                <button class="button button3">MY WORK</button>
+                
+            </div>
+  
+  </div>  
+  
+  <!-- right margin -->
+  <div class="item5"></div>
+  
+  <!-- footer -->
+  <div class="item6" style="background-color: rgb(232, 52, 84);"></div>
+</div>
+     
+    </body> 
+
+</html>
