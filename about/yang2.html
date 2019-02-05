@@ -6,9 +6,6 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style> 
-            * {
-                box-sizing: border-box;
-                }
             
             html { 
                 background: url(https://static.wixstatic.com/media/a97014d3cac6454b822f786b7d1f2878.jpg/v1
@@ -18,11 +15,23 @@
                 }
 
             body { 
-                color: black; 
+                color: black;
+                margin: 0;
                 }
             
-            .header {
+            .nametag {
                 padding: 20px;
+                }
+            
+            .topnav {
+                overflow: hidden;
+                }
+            .topnav a {
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
                 }
         </style>       
     </head>
@@ -48,32 +57,10 @@
 <style>
 
 
-body {
-  margin: 0;
-}
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
 
 /* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+
 
 /* Change color on hover */
 .topnav a:hover {
