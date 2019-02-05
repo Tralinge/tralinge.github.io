@@ -19,7 +19,10 @@
         font-size: 0.8em;
         font-weight: none;
         }
-
+     li.vlink {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        }
     a {
         text-decoration: none;
         color: #999;
