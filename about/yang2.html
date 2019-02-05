@@ -6,9 +6,7 @@
             
         
         <style> 
-            * {
-                box-sizing: border-box;
-              }
+
             html { 
                 background: url(https://static.wixstatic.com/media/a97014d3cac6454b822f786b7d1f2878.jpg/v1/fill/w_1920,h_1063,al_c,q_85,usm_0.66_1.00_0.01/a97014d3cac6454b822f786b7d1f2878.webp) 
                     no-repeat center fixed; 
@@ -16,19 +14,23 @@
                 }
           	body { 
                 color: black;
-                margin: 0;
+                margin: 10px, 70px;
+                white-space: nowrap;
+                overflow: auto;
                 }
+
             
             .nametag {
                 padding: 20px;
                 }
             
             .topnav {
+                position: absolute;
+                top: 80px;
+                left: 500px;
                 overflow: hidden;
                 }
             .topnav a {
-                float: left;
-                display: block;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
@@ -38,26 +40,6 @@
                 }
             .topnav a:hover {
                 color: rgb(99, 209, 211);
-                }
-            .column {
-                float: left;
-                padding: 10px;
-                }
-            .column.side {
-                width: 15%;
-                }
-            .column.middle {
-                width: 70%;
-                }
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-                }
-            @media screen and (max-width: 600px) {
-                .column.side, .column.middle {
-                width: 100%;
-                    }
                 }
           	.button { 
                 border: none;
@@ -73,6 +55,7 @@
                 height: 100px;
                 border-radius: 50%;
                 font-size: 14px;
+                white-space: normal;
                 cursor: pointer;
                 -webkit-transition-duration: 0.4s; /* Safari */
                 transition-duration: 0.4s;
@@ -103,9 +86,9 @@
     </head>
    
     <body>
-        <div class="nametag" style="float: left; line-spacing: 1.5;">
+        <div class="nametag" style="line-height: 0.7;">
             <h1 style="text-shadow: -1px -1px 2px grey;">Yanglin Lu</h1>
-            <h1 style="text-shadow: -1px -1px 2px grey;">卢阳琳<h1>
+            <h1 style="text-shadow: -1px -1px 2px grey;">卢阳琳</h1>
             <h3>Language Teacher and Educator</h3>
         </div>
         
@@ -118,30 +101,22 @@
           	<a href="#">CONTACT</a>
         </div>
         
-        <div class="row">
-            <!-- left side holder -->
-            
-            <div class="column side">
-                <h2>Right</h2>
-                <p></p>
-            </div>
-            <div class="column middle">
-                <img src="https://static.wixstatic.com/media/c728ec_22dc2d118e0d4069b5604dab6c3a0cca~mv2.jpg/v1/crop/x_0,y_102,w_960,h_944/fill/w_483,h_475,al_c,q_80,usm_0.66_1.00_0.01/IMG_7900_edited.webp" width="386" height="380" style="border-radius:50%; float: left; margin: 50px"></image>
-               
-                
-                <h1 style="font-size: 5em;">你好！Hello!</h1>
-                <p style="font-size: 2em;">a bit about me:</p>
-                <p>Currently a graduate student and a team teacher dedicated to language education. Strive to empower students and make the world a better place!</p>
-          		<button class="button button1">MY RESUME</button>
-                <button class="button button2">MY SKILLS</button>
-                <button class="button button3">MY WORK</button>
-                
-            </div>
-            <div class="column side">
-                <h2>Left</h2>
-                <p></p>
-            </div>
+        
+        <div class="content">
+            <img src="https://static.wixstatic.com/media/c728ec_22dc2d118e0d4069b5604dab6c3a0cca~mv2.jpg/v1/crop/x_0,y_102,w_960,h_944/fill/w_483,h_475,al_c,q_80,usm_0.66_1.00_0.01/IMG_7900_edited.webp" width="386" height="380" style="border-radius:50%; float: left; margin: 50px"></image>
+
+            <h1 style="font-size: 5em;">你好！Hello!</h1>
+            <p style="font-size: 2em;">a bit about me:</p>
+            <p>Currently a graduate student and a team teacher<br> 
+                dedicated to language education. Strive to empower<br> 
+                students and make the world a better place!</p>
+
+            <button class="button button1">MY RESUME</button>
+            <button class="button button2">MY SKILLS</button>
+            <button class="button button3">MY WORK</button>
+
         </div>
+        
     </body> 
 
 </html>
