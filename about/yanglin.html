@@ -19,7 +19,7 @@
                 white-space: nowrap;
                 }
                 
-            .item1 { grid-area: name; }
+            
             .item2 { grid-area: header; }
             .item3 { grid-area: left; }
             .item4 { grid-area: main; }
@@ -28,7 +28,7 @@
             .grid-container {
                 display: grid;
                 grid-template-areas:
-                  'left name name header header right'
+                  'left header header header header right'
                   'left main main main main right'
                   'footer footer footer footer footer footer';
                 grid-gap: 10px;
@@ -68,7 +68,7 @@
                 border: none;
                 padding: 20px;
                 text-align: center;
-                margin: 10px 4px;
+                margin: 0px 15px;
                 cursor: pointer;
                 width: 100px;
                 height: 100px;
@@ -113,23 +113,22 @@
         <div class="grid-container">
             
           <!-- name tag -->
-          <div class="item1">
-            <div class="nametag" style="line-height: 0.7; margin: 30px 0px 0px 50px; text-align: left;">
-              <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.1em; text-align: left;">Yanglin Lu</h1>
-              <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.3em;">卢阳琳</h1>
-              <h3 style="font-size: 0.6em;">Language Teacher and Educator</h3>
-            </div>
-          </div>
-
-          <!-- header -->
           <div class="item2">
-            <div class="topnav" style="margin-top: 80px;">
-              <a href="https://www.tralinge.com/about/yanglin">HOME</a>
-              <a href="https://www.tralinge.com/about/yanglin/resume">RESUME</a>
-              <a href="https://www.tralinge.com/about/yanglin/projects">PROJECTS</a>
-              <a href="https://www.tralinge.com/about/yanglin/students_say">STUDENTS SAY</a>
-              <a href="https://www.tralinge.com/about/yanglin/contact">CONTACT</a>
-              <a href="http://www.tralinge.com">TRALINGE</a>
+            <div class="flex-container">
+                <div class="nametag" style="line-height: 0.7; margin: 30px 0px 0px 50px; text-align: left;">
+                  <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.1em; text-align: left;">Yanglin Lu</h1>
+                  <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.3em;">卢阳琳</h1>
+                  <h3 style="font-size: 0.6em;">Language Teacher and Educator</h3>
+                </div>
+
+                <div class="topnav" style="margin-top: 80px;">
+                  <a href="https://www.tralinge.com/about/yanglin">HOME</a>
+                  <a href="https://www.tralinge.com/about/yanglin/resume">RESUME</a>
+                  <a href="https://www.tralinge.com/about/yanglin/projects">PROJECTS</a>
+                  <a href="https://www.tralinge.com/about/yanglin/students_say">STUDENTS SAY</a>
+                  <a href="https://www.tralinge.com/about/yanglin/contact">CONTACT</a>
+                  <a href="http://www.tralinge.com">TRALINGE</a>
+                </div>
             </div>
           </div>
 
@@ -145,20 +144,17 @@
 
 				
                 <div class="flex-container" style="flex-direction: column;">
-                  <h1 style="font-size: 2em; line-height: 2px; text-align: left;">你好！Hello!</h1>
-                  <p style="font-size: 1.5em; line-height: 2px; text-align: left;">a bit about me:</p>
+                  <h1 style="font-size: 80px; color: rgb(90, 90, 90); line-height: 2px; text-align: left;">你好！Hello!</h1>
+                  <p style="font-size: 60px; color: rgb(90, 90, 90); line-height: 2px; text-align: left;">a bit about me:</p>
                   <p style="font-size: 0.8em; display: inline-block; text-align: left; line-height: 30px;">Currently a graduate student and a team teacher<br> dedicated to language education. Strive to empower<br> students and make the world a better place!<br><br><br></p>
                   
+                  <div>
+                    <button class="button button1"><a href="https://www.tralinge.com/about/yanglin/resume">MY RESUME</a></button>
+                    <button class="button button2"><a href="https://www.tralinge.com/about/yanglin/skills">MY SKILLS</a></button>
+                    <button class="button button3"><a href="https://www.tralinge.com/about/yanglin/work">MY WORK</a></button>    
+                  </div>  
                 </div>
-              </div>
-             
-
-              <div>
-                <button class="button button1"><a href="https://www.tralinge.com/about/yanglin/resume">MY RESUME</a></button>
-                <button class="button button2"><a href="https://www.tralinge.com/about/yanglin/skills">MY SKILLS</a></button>
-                <button class="button button3"><a href="https://www.tralinge.com/about/yanglin/work">MY WORK</a></button>        
-              </div>         
-
+              </div>       
           </div>
 
           <!-- right margin -->
