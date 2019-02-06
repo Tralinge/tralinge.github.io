@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Current Projects"
-date: 2019-02-01
+date: 2019-02-06
 ---
 It's been awhile since my last post. I've been working hard on the website and would like to share
 my plans. There is still a lot to do before the website looks more professional, but these are my
