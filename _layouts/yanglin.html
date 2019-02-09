@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>lingo2world</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+			<!-- fonts -->
+			<link href="https://fonts.googleapis.com/css?family=Noticia+Text|Open+Sans" rel="stylesheet">
+		
+        <style> 
+            * {
+              	box-sizing: border-box;
+                }
+			
+            html { 
+                background: url(https://static.wixstatic.com/media/a97014d3cac6454b822f786b7d1f2878.jpg/v1/fill/w_1920,h_1063,al_c,q_85,usm_0.66_1.00_0.01/a97014d3cac6454b822f786b7d1f2878.webp) 
+                    no-repeat center fixed; 
+                background-size: cover;
+                }
+            
+          	p, h1, h3 { 
+                color: black;
+                white-space: nowrap;
+                }
+                
+            
+            .item2 { grid-area: header; }
+            .item3 { grid-area: left; }
+            .item4 { grid-area: main; }
+            .item5 { grid-area: right; }
+            .item6 { grid-area: footer; }
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'left header header header header right'
+                  'left main main main main right'
+                  'footer footer footer footer footer footer';
+                grid-gap: 10px;
+                padding: 10px;
+           		}
+          	.grid-container > div {
+                text-align: center;
+                padding: 1px 0;
+                font-size: 30px;
+              	}
+ 			.flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+              	}
+          	.flex-container > div {
+                margin: 10px;
+                text-align: center;
+                line-height: 10px;
+                font-size: 30px;
+             	}        
+            .topnav {
+                overflow: hidden;
+                }
+            .topnav a {
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: rgb(128, 128, 128);
+                font-size: 13px;
+                font-weight: bold;
+                }
+            .topnav a:hover {
+                color: rgb(99, 209, 211);
+                }
+          	.button { 
+                border: none;
+                padding: 20px;
+                text-align: center;
+                margin: 0px 15px;
+                cursor: pointer;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                white-space: normal;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+              	}
+            .button a {
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                color: white;
+                }
+            .button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+          	.button1 {
+                background-color: rgb(232, 52, 84);
+                }
+          	.button1:hover {
+            	background-color: rgb(207, 23, 57);
+          		}
+          	.button2 {
+                background-color: rgb(210, 203, 39);
+          		}
+          	.button2:hover {
+            	background-color: rgb(172, 168, 32);
+          		}
+          	.button3 {
+                background-color: rgb(99, 209, 211);
+              	}
+          	.button3:hover {
+            	background-color: rgb(56, 197, 199);
+          		}
+                
+        </style>       
+    </head>
+   
+    <body>
+        <div class="grid-container">
+            
+          <!-- name tag -->
+          <div class="item2">
+            <div class="flex-container">
+                <div class="nametag" style="line-height: 0.7; margin: 30px 30px 0px 0px; text-align: left;">
+                  <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.1em; text-align: left; 
+						font-family: 'Noticia Text', serif;">Yanglin Lu</h1>
+                  <h1 style="text-shadow: -1px -1px 2px grey; font-size: 1.3em; font-family: 'Noticia Text', serif;">
+					  	卢阳琳</h1>
+                  <h3 style="font-size: 0.6em; font-family: 'Open Sans', sans-serif;">Language Teacher and Educator</h3>
+                </div>
+
+                <div class="topnav" style="margin-top: 80px;">
+                  <a href="https://www.tralinge.com/about/yanglin">HOME</a>
+                  <a href="https://www.tralinge.com/about/yanglin/resume">RESUME</a>
+                  <a href="https://www.tralinge.com/about/yanglin/projects">PROJECTS</a>
+                  <a href="https://www.tralinge.com/about/yanglin/students_say">STUDENTS SAY</a>
+                  <a href="https://www.tralinge.com/about/yanglin/contact">CONTACT</a>
+                </div>
+            </div>
+          </div>
+
+          <!-- left margin -->
+          <div class="item3" style="margin: 7px;"></div>
+
+          <!-- main content -->
+          <div class="item4">
+                  
+              <div class="flex-container">
+              
+                <div class="container">
+
+                  {{ content }}
+
+                </div>
+              </div>
+          </div>
+
+          <!-- right margin -->
+          <div class="item5" style="margin: 7px;"></div>
+
+          <!-- footer -->
+          <div class="item6" style="background-color: rgb(232, 52, 84);">
+                <a style="text-decoration: none; text-weight: bold; color: black;" href="http://www.tralinge.com">Back to Tralinge</a>
+          </div>
+       </div>
+    </body> 
+</html>
