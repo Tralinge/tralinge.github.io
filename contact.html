@@ -2,7 +2,7 @@
 layout: default
 title: Tralinge | Contact 
 ---
-  <style>
+ <!-- <style>
     body {font-family: Arial, Helvetica, sans-serif;}
     * {box-sizing: border-box;}
 
@@ -50,9 +50,15 @@ title: Tralinge | Contact
 </head>
 <body>
 
-  <h3>Contact Form</h3>
+  <h3>Contact Form</h3> -->
 
-  <div class="container">
+<form method="POST" action="https://formspree.io/tralinge@gmail.com">
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Test Message"></textarea>
+  <button type="submit">Send Test</button>
+</form>
+
+  <!--<div class="container">
     <form action="https://formspree.io/tralinge@email.com" method="POST" />
       <label>Name</label>
       <input type="text" name="name" placeholder="Your name...">
@@ -66,5 +72,5 @@ title: Tralinge | Contact
       <input type="submit" value="Send">
     </form>
   </div>
-</body>
+</body>-->
 
