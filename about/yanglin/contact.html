@@ -2,4 +2,53 @@
 layout: yanglin
 title: Tralinge | Yanglin - Contact
 ---
-Contact - Under Construction
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    input[type=email], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }    
+    
+    .container {
+      border-radius: 5px;
+      background-color:rgba(240, 245, 245,0.5);
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Contact Form</h3>
+
+  <div class="container">
+    <form action="https://formspree.io/tralinge@gmail.com" method="POST" />
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Your name">
+
+      <label>Contact Info (optional)</label>
+      <input type="email" name="_replyto" placeholder="Your e-mail">
+        
+      <label>Comment</label>
+      <textarea name="body" placeholder="Write something..." style="height:200px"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
