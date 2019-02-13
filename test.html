@@ -2,53 +2,86 @@
 layout: default2
 title: tralinge test
 ---
-<div class="blurb" style="min-width: 200px;">
-	<h1>Tralinge - A Site Dedicated to Langauge Acquisition</h1>
-	<p> 	
-		This site pulls together the knowledge of over a decade of combined teaching
-		experience at multiple levels of intensity (casual to university level)
-		and several age groups from infant to adult. This site is still under 
-		development, so please be patient while we learn to code and add more 
-		material. In the mean time, feel free to browse the different pages here.
-		Currently the site is divided into Chinese and English, with more languages
-		in the future.<br>
-	</p>
-	
-	
-	<div style="display: flex; align-items: top; justify-content: center; margin: auto; flex-wrap: wrap;">
-		<div style="align-items: top; max-width: 250px;">	
-			<p style="margin: 10px 10px 10px 40px;"> 
-				For my English learners, please note the <a href="https://www.tralinge.com/english_corner/worksheets.html">
-				"Worksheets"</a> section where you can find several useful exercises.
-			</p>
-		</div>
-		
-		<div>
-			<a href="http://www.tralinge.com/english_corner/worksheets">
-				<img src="https://www.tralinge.com/english_corner/worksheets/body/Monster Face_A.jpg" 
-				alt="worksheets" width=150px height=150px style="margin: 10px; border-radius: 50%;">
-			</a>
-		</div>
-        
-		<div style="max-width: 250px; align-item: left;">
-			<p style="margin: 10px 10px 10px 40px;"> 
-				My current project is to make short phonics books to help English learners
-				practice differentiating between diagraphs (e.g. ch/sh, sk/sc, pr/pl) in an
-				amusing way. Be sure to check out these short stories <a href="
-				https://www.tralinge.com/english_corner/stories.html">here</a>.
-			</p>
+<style>
+	.button { 
+		border: none;
+		padding: 20px;
+		text-align: center;
+		margin: 5px 5px;
+		cursor: pointer;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		white-space: normal;
+		cursor: pointer;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		}
+	.button a {
+		text-decoration: none;
+		font-size: 15px;
+		color: white;
+		}
+	.button:hover a {
+		color: rgba(0,0,0,0);
+		}
+	.button:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+	.button1 {
+		background-color: rgb(232, 52, 84);
+		}
+	.button1:hover {
+		background-image: url("https://www.tralinge.com/media/ec/mon2.png");
+		}
+	.button2 {
+		background-color: rgb(210, 203, 39);
+		}
+	.button2:hover {
+		background-image: url("https://www.tralinge.com/media/ec/stor.png");
+		}
+</style>
+  
+<body>
+	<div class="blurb" style="min-width: 200px;">
+		<h1>Tralinge - A Site Dedicated to Langauge Acquisition</h1>
+		<p> 	
+			This site pulls together the knowledge of over a decade of combined teaching
+			experience at multiple levels of intensity (casual to university level)
+			and several age groups from infant to adult. This site is still under 
+			development, so please be patient while we learn to code and add more 
+			material. In the mean time, feel free to browse the different pages here.
+			Currently the site is divided into Chinese and English, with more languages
+			in the future.<br>
+		</p>
+
+		<div style="display: flex; align-items: top; justify-content: center; margin: auto; flex-wrap: wrap;">
+			<div style="align-items: top; max-width: 250px;">	
+				<p style="margin: 10px 10px 10px 40px;"> 
+					For my English learners, please note the <a href="https://www.tralinge.com/english_corner/worksheets.html">
+					"Worksheets"</a> section where you can find several useful exercises.
+				</p>
+			</div>
+
+			<div>            
+				<button class="button button1"><a href="https://www.tralinge.com/english_corner/worksheets">WORKSHEETS</a></button>
+			</div>
+
+			<div style="max-width: 250px; align-item: left;">
+				<p style="margin: 10px 10px 10px 40px;"> 
+					My current project is to make short phonics books to help English learners
+					practice differentiating between diagraphs (e.g. ch/sh, sk/sc, pr/pl) in an
+					amusing way. Be sure to check out these short stories <a href="
+					https://www.tralinge.com/english_corner/stories.html">here</a>.
+				</p>
+			</div>	
+
+			<div>
+				<button class="button button2"><a href="https://www.tralinge.com/english_corner/stories">STORIES</a></button>
+			</div>
 		</div>	
-		
-			
-		<div>
-			<a href="https://www.tralinge.com/english_corner/stories.html">
-				<img src="http://www.tralinge.com/english_corner/stories/grace/grace 1of3.jpg" 
-				     alt="phonics stories" width=150px height=150px style="margin: 10px; border-radius: 50%;">
-			</a>
-		</div>
-	</div>	
-	
-	<div style="clear: both;">
+
+		<div style="clear: both;">
 	</div>
 
 </div><!-- /.blurb -->
