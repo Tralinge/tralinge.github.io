@@ -3,9 +3,11 @@ layout: default
 notes: active
 ---
 
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
 <div class="notes">
 		<div class="note single">
-			<h1 class="title">{{ page.title }}</h1>
+			<h1 class="title" style="font-family: 'Special Elite', cursive;">{{ page.title }}</h1>
 			
 			<h2 class="date"><info datetime="{{ page.date }}">
 				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
