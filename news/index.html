@@ -8,7 +8,7 @@ title: News
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h2><a style="font-family: 'Special Elite', cursive;" href="{{ post.url }}">{{ post.title }}</a></h2>
+  <h2 style="font-family: 'Special Elite', cursive;"><a style="font-family: 'Special Elite', cursive;" href="{{ post.url }}">{{ post.title }}</a></h2>
   <p class="author">
     <span class="date">{{ post.date | date_to_string }}</span>
   </p>
