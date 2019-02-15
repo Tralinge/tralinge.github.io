@@ -2,14 +2,53 @@
 layout: default
 title: Tralinge | About
 ---
-<div class="blurb">
+<style>
+	.button { 
+		border: none;
+		padding: 20px;
+		text-align: center;
+		margin: 5px 5px;
+		cursor: pointer;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		white-space: normal;
+		cursor: pointer;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		}
+	.button:hover {
+		color: rgba(0,0,0,0);
+		}
+	.button:hover {
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+
+</style>
+  
+{% include responsive.html %}
+
+<body>
 	<h1>About</h1>
+	
 	<p>你们啊 什么外国人 我是安徽人</p>
 	
-<ul style="list-style-type: none;">	
-	<li  class="vlink"><a href="http://tralinge.com/about/christopher.html">Christopher</a></li>
-	<li  class="vlink"><a href"vlink" href="http://tralinge.com/about/yanglin.html">Yang Lin</a></li>
-	<li  class="vlink"><a href"vlink" href="http://tralinge.com/about/Jeremy.html">Jeremy</a></li>
-</ul>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="https://www.tralinge.com/about/christopher.html">
+				<img class="button" src="https://www.tralinge.com/media/profile/chrisp.jpg" alt="christopher" width="400">
+			</a>
+			<div class="desc">Christopher</div>
+	  	</div>
+	</div>
 	
-</div><!-- /.blurb -->
+	<div class="responsive">
+		<div class="gallery">
+			<a href="https://www.tralinge.com/about/yanglin.html">
+				<img class="button" src="https://www.tralinge.com/media/profile/yanglinp.jpg" alt="yanglin" width="400">
+			</a>
+			<div class="desc">Yang Lin</div>
+	  	</div>
+	</div>
+	
+	<div style="clear: both;"></div>
