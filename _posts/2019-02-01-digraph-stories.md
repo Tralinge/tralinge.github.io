@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New Diagraph Stories and Website Updates"
+title: "New Digraph Stories and Website Updates"
 date: 2019-02-01
 ---
 It's been awhile since my last post. I've been working hard on the site, making it more 
@@ -10,6 +10,6 @@ already be found elsewhere. What is unique about Tralinge is the cultural compon
 that reason, I want to add more stories, which will not only allow students to practice 
 the language, but will also have cultural aspects ingrained. The concept is still a work in 
 progress, so right now I'm working on shorter stories to help students with pronunciation.
-I have published a few stories now utilizing diagraphs. You can find them 
-[here](https://www.tralinge.com/english_corner/worksheets/phonics.html) I plan on getting the 
+I have published a few stories now utilizing digraphs. You can find them 
+[here](https://www.tralinge.com/english_corner/stories) I plan on getting the 
 comments section up shortly so that you can give feedback. Enjoy for now!
