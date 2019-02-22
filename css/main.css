@@ -3,6 +3,21 @@
         box-sizing: border-box;
         }
 
+    .tralinge-top{
+        font-family: 'EB Garamond', serif;
+        font-size: 4em;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+        line-height: 1.1;
+        text-shadow: 1.5px 1px grey;
+        }
+
+    .motto{
+        font-family: "Segoe UI, Arial, san-serif";
+            font-size: 1.5em;
+            }
+
     body {
         margin: 10px auto;
         width: 90%;
