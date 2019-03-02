@@ -1,20 +1,73 @@
----
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>http://tralinge.github.io{{ post.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endfor %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi=
+        "http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=
+        "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
+    <!-- Main -->
     <url>
-        <loc>http://tralinge.github.io{{ page.url | remove: 'index.html' }}</loc>
+        <loc>https://www.tralinge.com/</loc>
+        <priority>1.00</priority>
+        <changefreq>monthly</changefreq>
     </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+    
+    <!-- English Corner -->
+    <url>
+        <loc>https://www.tralinge.com/english_corner</loc>
+        <priority>0.80</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/english_corner/history_of_english</loc>
+        <priority>0.60</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/english_corner/stories</loc>
+        <priority>1.00</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/english_corner/worksheets</loc>
+        <priority>0.60</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/english_corner/etymology</loc>
+        <priority>0.10</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <!-- Chinese Corner -->
+    <url>
+        <loc>https://www.tralinge.com/chinese_corner</loc>
+        <priority>0.80</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/chinese_corner/history_of_chinese</loc>
+        <priority>0.60</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <!-- About -->
+    <url>
+        <loc>https://www.tralinge.com/about</loc>
+        <priority>0.80</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/about/news</loc>
+        <priority>0.60</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://www.tralinge.com/contact</loc>
+        <priority>0.10</priority>
+    </url>        
 </urlset>
