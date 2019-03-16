@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Regular Additions"
-date: 2019-03-19
+date: 2019-03-09
 ---
 
 I have made most of the adjustments to the website that I want for now; 
