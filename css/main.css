@@ -101,7 +101,7 @@
 
     .active {
         background-color: rgb(153, 235, 255);
-        color: white;
+        color: rgb(153, 235, 255);
         }
 
     .topnav .icon {
