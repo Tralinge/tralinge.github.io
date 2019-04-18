@@ -2,7 +2,7 @@
 layout: yanglin
 title: Yanglin's Projects | Tralinge
 ---
-<!DOCTYPE html>
+<html lang="en">
 <style>
 	.flexcenter {
     	display: flex;
@@ -13,31 +13,70 @@ title: Yanglin's Projects | Tralinge
     	clear: both; 
         padding: 10px 0px;
     	}
+  	.propic {
+    	display: flex;
+        justify-content: center;
+  		align-items: center;
+        padding-right: 20px;
+        width: 40%;
+    	}
+  	.propar {
+    	display: flex;
+        justify-content: center;
+  		align-items: center;
+        width: 60%
+    	}
+  	.procolumn {
+		display:flex; 
+        flex-direction: column; 
+        justify-content:center; 
+        margin: 2em; 
+        max-width: 1000px; 
+    	background-color: rgba(255, 255, 255, 0.5); 
+        padding: 2em; 
+        margin-bottom: 0px;    
+    	}
+  	.probox {
+    	clear:both; 
+        text-align: justify; 
+        display:flex; 
+        border-top: 2px solid grey; 
+        justify-content: center;
+    	}    
+  	.proparbox {
+    	width: 60%; 
+        min-width: 200px; 
+        display:flex; 
+        flex-direction: column;
+    	}
+  	.propartopbox {
+    	border-bottom: 2px solid grey; 
+        display: flex; 
+        flex-direction: row;
+    	}
 </style>
 
-<div style="display:flex; flex-direction: column; justify-content:center; margin: 2em; max-width: 1000px; 
-    background-color: rgba(255, 255, 255, 0.5); padding: 2em; margin-bottom: 0px">
-    
+<div class="procolumn">
     <h1>Projects</h1>
 
-    <div style="clear:both; text-align: justify; display:flex; border-top: 2px solid grey; justify-content: center;">
-        <div style="width: 50%;">
-            Picture   
+    <div class="probox">
+        <div class="propic">
+            <img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan_lin_ge" width=100%>   
         </div>
 
-        <div style="width: 50%; min-width: 200px; display:flex; flex-direction: column;">
-            <div style="border-bottom: 2px solid grey; display: flex; flex-direction: row;">
+        <div class="proparbox">
+            <div class="propartopbox">
             	<div class="flexcenter">
 			  		<button class="buttonpro">Project | 01</button>
                 </div>
                 
-                <div class="flexcenter" style="margin: 10px 0px;">
+                <div class="flexcenter par">
 					Building a multi-language learning website.<br><br>   
 					Jan 2019 to Present
                 </div>
             </div>
 
-            <div class="par" style="clear: both; padding: 10px 0px;">
+            <div class="flexcenter par">
                 My colleague Chris and I (mostly him)  have been working on our site Tralinge 川林哥 since 
                 January 2019. He has been learning to create the website from scratch. We envision that we 
                 will provide language learning experiences embedded in cultural experiences. It is still a 
@@ -47,24 +86,24 @@ title: Yanglin's Projects | Tralinge
         </div>        
     </div> 
     
-    <div class="flexcenter" style="clear:both; text-align: justify; border-top: 2px solid grey;">
-        <div style="width: 50%;">
-            Picture   
+    <div class="probox">
+        <div class="propic">
+            <img src="https://www.tralinge.com/media/yanglin/5c.jpg" alt="5c" width=100%>   
         </div>
         
-        <div style="width: 50%; min-width: 200px; display:flex; flex-direction: column;">
-            <div style="border-bottom: 2px solid grey; display: flex; flex-direction: row;">
+        <div class="proparbox">
+            <div class="propartopbox">
             	<div class="flexcenter">
                 	<button class="buttonpro">Project | 02</button>
                 </div>
                 
-                <div class= "flexcenter" style="margin: 10px 0px;">
+                <div class= "flexcenter par">
 					Curriculum  Design- Culture-Based Chinese Course<br><br>   
 					Jan 2019 to Present
                 </div>
             </div>
         
-            <div class="par" style="clear: both;">
+            <div class="flexcenter par">
                 How to teach Chinese through cultural projects assisted by technology, such as Wechat. WeChat is a very 
                 popular app used by Chinese speaking community.<br><br>
                 It is a personalized curriculum design based on empirical research and my own teaching experience. I 
@@ -74,24 +113,24 @@ title: Yanglin's Projects | Tralinge
         </div>        
     </div> 
     
-    <div style="clear:both; text-align: justify; display:flex; border-top: 2px solid grey; justify-content: center;">
-        <div style="width: 50%;">
-            Picture   
+    <div class="probox">
+        <div class="propic">
+            <img src="https://www.tralinge.com/media/yanglin/whywrite.png" alt="why write" width=100%>      
         </div>
 		
-        <div style="width: 50%; min-width: 200px; display:flex; flex-direction: column;">
-            <div style="border-bottom: 2px solid grey; display: flex; flex-direction: row;">
+        <div class="proparbox">
+            <div class="propartopbox">
             	<div class="flexcenter">
                 	<button class="buttonpro">Project | 03</button>
                 </div>
                 
-                <div class="flexcenter" style="margin: 10px 0px;">
+                <div class="flexcenter par">
 					Writing in a Second Language<br><br>   
 					Jan 2019 to Present
                 </div>
             </div>
 
-            <div class="par" style="clear: both;">
+            <div class="flexcenter par">
                 Learning a language is already a challenge, not to mention to write in a second language. However, 
                 once equipped with the skill, writing becomes so much fun. I am working on my personal writing in 
                 the hope that one day my voice will be heard, and also the voices of people like me. It will be a 
@@ -100,24 +139,24 @@ title: Yanglin's Projects | Tralinge
         </div>        
     </div> 
     
-    <div style="clear:both; text-align: justify; display:flex; border-top: 2px solid grey; justify-content: center;">
-        <div style="width: 50%;">
-            Picture   
+    <div class="probox">
+        <div class="propic">
+            <img src="https://www.tralinge.com/media/yanglin/trash.png" alt="trash" width=100%>   
         </div>
 
-		<div style="width: 50%; min-width: 200px; display:flex; flex-direction: column;">
-            <div style="border-bottom: 2px solid grey; display: flex; flex-direction: row;">
+		<div class="proparbox">
+            <div class="propartopbox">
             	<div class="flexcenter">
                 	<button class="buttonpro">Project | 04</button>
                 </div>
                 
-                <div class="flexcenter">
+                <div class="flexcenter par">
 					Translaguaging Stories from Multilingual Speakers<br><br>
 					Jan 2019 to Present   
                 </div>
             </div>
 
-            <div class="par" style="clear: both;">
+            <div class="flexcenter par">
                 If you happen to speak more than one language, you must have the experience of using words from more 
                 than just one languages together to articulate your thoughts or you might use the language structure 
                 from one language to create new utterances in another language.<br><br>
