@@ -60,12 +60,13 @@
         line-height: 1em;
         }
 
-   p {
-      font-size: 1.2em;
-      text-align: justify;
-      line-height: 1.4em;
-      color: #333;
-      }
+    p {
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.4em;
+        color: #333;
+        background-color:rgba(255, 255, 255, 0.5);
+        }
 
    th, td {
       font-size: 1.2em;
