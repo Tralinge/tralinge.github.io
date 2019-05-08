@@ -5,7 +5,7 @@ title: Tralinge
 
 <style>
 	html {
-    	background-image: url("https://www.tralinge.com/media/background/inkmountain4.jpg"); 
+    	background-image: url("https://www.tralinge.com/media/background/inkmountain4.jpg") no-repeat center fixed; 
         background-size: cover;
     	}
     .picshad:hover {
@@ -18,6 +18,9 @@ title: Tralinge
   	.piclabel {
     	text-align:center; font-size:1.8em;
     	}
+	.radgrad {
+		background-image: radial-gradient(rgba(255, 255, 255, 0.7) 80%, rgba(255, 255, 255, 0) 100%);
+		}
 </style>
 
 <div style="display:flex; flex-wrap:wrap; margin:auto; max-width:1000px;">
@@ -26,8 +29,7 @@ title: Tralinge
 	</div>
     
     <!-- Introduction -->
-    <div style="width:100%; max-width:1000px; display:flex; flex-wrap:wrap; margin:auto; text-align:justify; font-size:1.3em;
-				background-image: radial-gradient(rgba(255, 255, 255, 0.7) 80%, rgba(255, 255, 255, 0) 100%);">
+    <div class="radgrad" style="width:100%; max-width:1000px; display:flex; flex-wrap:wrap; margin:auto; text-align:justify; font-size:1.3em;">
     	<div style="max-width:450px; min-width:200px; justify-content:center; 
 				align-items:flex-start; margin:auto; margin-top:0px; padding:10px;">
 			有一天我要走遍天涯，学遍各种语言。<br>
@@ -49,7 +51,7 @@ title: Tralinge
 	</div>
     
     <!-- English Box -->
-    <div style="display:flex; flex-wrap:wrap; max-width:500px; min-width:200px; justify-content:center; 
+    <div class="radgrad" style="display:flex; flex-wrap:wrap; max-width:500px; min-width:200px; justify-content:center; 
 				align-items:flex-start; margin:auto; margin-top:0px;">
     	<div style="width:100%; text-align:center; background-color:#99ddff; font-size:2em; margin:5px;">
         	<a class="asub" href="https://www.tralinge.com/english_corner">English</a>
@@ -127,7 +129,7 @@ title: Tralinge
 	</div>
     
     <!-- Chinese Box -->
-    <div style="display:flex; flex-wrap:wrap; max-width:500px; min-width:200px; justify-content:center; 
+    <div class="radgrad" style="display:flex; flex-wrap:wrap; max-width:500px; min-width:200px; justify-content:center; 
 				align-items:flex-start; margin:auto; margin-top:0px;">
     	<div style="width:100%; text-align:center; background-color:#99ddff; font-size:2em; margin:5px;">
         	<a class="asub" href="https://www.tralinge.com/english_corner">中文</a>
