@@ -1,52 +1,50 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<!-- analytics -->
-			{% include analytics.html %}
-			
-			<!-- set up -->
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			
-			<!-- google fonts -->
-			<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400" rel="stylesheet">
-			
-			<!-- tab -->
-			<title>{{ page.title }}</title>
-			
-			<!-- link to main stylesheet -->
-			
-			
-			<!-- favicon -->
-			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-			
-		</head>
-		
-		<body>	
-			
-			<!-- Name -->
-			<div class="tralinge-top">
-				<a href="https://www.tralinge.com" class="home">Tralinge</a>
-				<img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan_lin_ge" width="100">
-			</div>
-			
-			
+<html lang="en" style="background:url(https://www.tralinge.com/media/background/inkmountain4.jpg) center/cover no-repeat;">
+	<head>
+		<!-- analytics -->
+		{% include analytics.html %}
 
-			<!-- Motto -->
-			<div class="motto" style="font-family:'Segoe UI',Arial,sans-serif">
-					Culture Based Language Learning
-			</div>		
-			
-			<!-- Navbar -->
-			{% include navbar.html %}
-	    		
-			<!-- Main Contents -->
-			<div class="container">
-				{{ content }}
-			</div>
-			
-			<!-- Footer -->
-			{% include footer.html %}
-			
-		</body>
-	</html>
+		<!-- set up -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400" rel="stylesheet">
+
+		<!-- tab -->
+		<title>{{ page.title }}</title>
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+	</head>
+
+	<body style="position: relative; min-height: 100%; top: 0px;">	
+
+		<!-- Name -->
+		<div class="tralinge-top">
+			<a href="https://www.tralinge.com" class="home">Tralinge</a>
+			<img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan_lin_ge" width="100">
+		</div>
+
+		<!-- Motto -->
+		<div class="motto" style="font-family:'Segoe UI',Arial,sans-serif">
+				Culture Based Language Learning
+		</div>		
+
+		<!-- Navbar -->
+		{% include navbar.html %}
+
+		<!-- Main Contents -->
+		<div class="container">
+			{{ content }}
+		</div>
+
+		<!-- Footer -->
+		{% include footer.html %}
+
+	</body>
+</html>
