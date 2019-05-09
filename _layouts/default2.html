@@ -1,101 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-            <title>{{ page.title }}</title>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-			
-            <!-- analytics -->
+	<html lang="en" style="background:url(https://www.tralinge.com/media/background/inkmountain4.jpg);
+						   no-repeat center fixed; background-size: cover;">
+		<head>
+			<!-- analytics -->
 			{% include analytics.html %}
-        	
-			<!-- fonts -->
-			<link href="https://fonts.googleapis.com/css?family=Noticia+Text|Open+Sans" rel="stylesheet">
-            
-            <!-- style sheet -->
+			
+			<!-- set up -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+			<!-- google fonts -->
+			<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400" rel="stylesheet">
+			
+			<!-- tab -->
+			<title>{{ page.title }}</title>
+			
+			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			
+			<!-- favicon -->
+			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+			
+		</head>
 		
-        <style> 
-            * {
-              	box-sizing: border-box;
-                }
-            
-          	p, h1, h3 { 
-                color: black;
-
-                }
-                
-            .item1 { grid-area: header; }
-            .item2 { grid-area: nav; }
-            .item3 { grid-area: left; }
-            .item4 { grid-area: main; }
-            .item5 { grid-area: right; }
-            .item6 { grid-area: footer; }
-            .grid-container {
-                display: grid;
-                grid-template-areas:
-                  'header header header header header header'
-                  'nav nav nav nav nav nav'
-                  'left main main main main right'
-                  'footer footer footer footer footer footer';
-                grid-gap: 10px;
-                padding: 10px;
-           		}
-          	.grid-container > div {
-                text-align: center;
-                padding: 1px 0;
-              	}
- 		.flex-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-              	}
-		.flex-container > div {
-                margin: 5px;
-                text-align: center;
-                line-height: 10px;               
-             	}        
-                
-        </style>       
-    </head>
-   
-    <body>
-        <div class="grid-container">
-            
-			<!-- name tag -->
-			<div class="item1">
-				<div class="flex-container" style="justify-content: left;">
-					<div class="nametag" style="line-height: 0.7; padding: 5px 0px 0px; text-align: left; font-size: 40px;">
-						<a href="https://www.tralinge.com" style="text-decoration: none; color: black; text-shadow: -1px -1px 2px grey; font-size: 1.2em; text-align: left; font-family: 'Noticia Text', serif;">Tralinge</h1></a>
-						<img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan_lin_ge" width="100" style="margin-right: 100px;">
-					</div>
-					<div style="line-height: 0.5; text-align: right;">
-						<h3 style="font-family: 'Open Sans', sans-serif; padding: 5px;">Culture Based Language Learning</h3>
-					</div>
-				</div> 
-
-				<!-- topnav -->
-				<div>
-					{% include navbar.html%}
-				</div>
+		<body style="position: relative; min-height: 100%; top: 0px;">	
+			
+			<!-- Name -->
+			<div class="tralinge-top">
+				<a href="https://www.tralinge.com" class="home">Tralinge</a>
+				<img src="https://www.tralinge.com/media/background/chuan lin ge.png" alt="chuan_lin_ge" width="100">
 			</div>
 			
-			<!-- left margin -->
-			<div class="item3"></div>
+			<!-- Google Translate -->
+			<div id="google_translate_element" style="float: right; margin-bottom: 0px;"></div>
 
-			<!-- main content -->
-			<div class="item4">  
-				<div class="flex-container">
-					{{ content }}
-				</div>
+			<script type="text/javascript">
+				function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en', 
+				       layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+				}
+			</script>
+
+			<script type="text/javascript" 
+				src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+			</script>
+
+			<!-- Motto -->
+			<div class="motto" style="font-family:'Segoe UI',Arial,sans-serif">
+					Culture Based Language Learning
+			</div>		
+			
+			<!-- Navbar -->
+			{% include navbar.html %}
+	    		
+			<!-- Main Contents -->
+			<div class="container">
+				{{ content }}
 			</div>
-
-			<!-- right margin -->
-			<div class="item5"></div>
-
-			<!-- footer -->
-			<div class="item6" style="justify-content: left; text-align: left;">
-				{% include footer.html %}
-			</div>
-       </div>
-    </body> 
-</html>
+			
+			<!-- Footer -->
+			{% include footer.html %}
+			
+		</body>
+	</html>
