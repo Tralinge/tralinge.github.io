@@ -2,7 +2,6 @@
     * {
         box-sizing: border-box;
         }
-
     .tralinge-top{
         font-family: 'EB Garamond', serif;
         font-size: 4em;
@@ -12,24 +11,20 @@
         line-height: 1.1;
         text-shadow: 1.5px 1px grey;
         }
-
     .motto{
         font-family: "Segoe UI, Arial, san-serif";
             font-size: 1.5em;
             }
-
     body {
         margin: 10px auto;
         width: 90%;
         }    
-
     footer ul { 
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         padding: 0px;
         list-style: none;
         line-height: 1.2;
         }
-
     footer li {
         font-size: 0.8em;
         font-weight: none;
@@ -42,16 +37,13 @@
         text-decoration: none;
         color: #999;
         }
-
     a:hover {
         text-decoration: underline;
         }
-
     a.home {
         text-decoration: none;
         color: black;
         }
-
     h1 {
         font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif; 
         font-size: 2.5em; 
@@ -59,7 +51,6 @@
         font-weight: 500;
         line-height: 1em;
         }
-
     p {
         font-size: 1.2em;
         text-align: justify;
@@ -67,22 +58,22 @@
         color: #333;
         background-color:rgba(255, 255, 255, 0.5);
         }
-
-   th, td {
-      font-size: 1.2em;
-      text-align: justify;
-      vertical-align: top;
-      padding: 15px;
-      }    
-
-   ul.posts { 
-      margin: 20px auto 40px; 
-      font-size: 1.5em;
-      }
-
+   	th, td {
+		font-size: 1.2em;
+		text-align: justify;
+		vertical-align: top;
+		padding: 15px;
+		}    
+   	ul.posts { 
+		margin: 20px auto 40px; 
+		font-size: 1.5em;
+		}
     ul.posts li {
-      list-style: none;
-      }
+		list-style: none;
+		}
+	.notecomments {
+		margin-top:15px;
+		}
 
 /* top nav dropdown */
     .topnav {
