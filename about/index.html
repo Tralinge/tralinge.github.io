@@ -7,6 +7,8 @@ title: About | Tralinge
 		border: none;
 		text-align: center;
 		margin: 5px 40px;
+		width:300px;
+		height:300px;
 		cursor: pointer;
 		border-radius: 50%;
 		white-space: normal;
@@ -19,8 +21,44 @@ title: About | Tralinge
 	.button:hover {
 		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 		}
+	.yanglinp {
+    	background-image:url('http://www.tralinge.com/media/profile/yanglinp.png'); 
+    	}
+  	.yanglinp:hover {
+    	background-image:url('http://www.tralinge.com/media/profile/yanglinptrad.png');
+    	}
 	h2 {
 		text-align: center;
+		}
+	.flip-box {
+		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		border: 1px solid #f1f1f1;
+		perspective: 1000px;
+		border-radius:50%;
+		}
+	.flip-box-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+		border-radius:50%;
+		}
+	.flip-box:hover .flip-box-inner {
+		transform: rotateY(180deg);
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+	.flip-box-front, .flip-box-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		}
+	.flip-box-back {
+		transform: rotateY(180deg);
 		}
 </style>
   
@@ -34,13 +72,20 @@ title: About | Tralinge
 			</a>
 			<h2>Christopher - He's 安徽人</h2>
 		</div>
+		
+		<a href="http://www.tralinge.com/yanglin">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="http://www.tralinge.com/media/profile/yanglinp.png" alt="yanglin" style="border-radius:50%;">
+					</div>
 
-		<div>
-			<a href="https://www.tralinge.com/yanglin">
-				<img class="button" src="https://www.tralinge.com/media/profile/yanglinp.png" alt="yanglin" max-width="400">
-			</a>
-			<h2>Yang Lin - She's Fo Shiz.</h2>
-		</div>
+					<div class="flip-box-back">
+						<img src="http://www.tralinge.com/media/profile/yanglinptrad.png" style="border-radius:50%;">
+					</div>
+				</div>
+			</div>
+		</a>
 		
 		<!-- <div>
 			<a href="https://www.tralinge.com/about/jeremy.html">
