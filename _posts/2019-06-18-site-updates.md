@@ -9,5 +9,5 @@ visual appeal of the site. There are a few new song additions, along with audio 
 them in the ["song section"](https://www.tralinge.com/english_corner/songs/) 
 
 After hearing your feedback, I have changed focus on the story section to help younger learners who are overwhelmed by more than
-one page of content. Check out this new type of ["short story worksheet"](https://www.tralinge.com/english_corner/stories/shorts/dungbun)
+one page of content. Check out this new type of ["short story worksheet"](https://www.tralinge.com/english_corner/stories/shorts/dung_bun)
 and be sure to leave feedback.
