@@ -211,9 +211,26 @@
     img.rounded {
       border-radius: 30%;
       }
+
+/* Collapsible */
+	.collapsible {
+	  cursor: pointer;
+	  width: 100%;
+	  max-width:800px;
+	  margin:auto;
+	  align-items:center;
+	}
+
+	.content {
+	  padding: 0 18px;
+	  max-height: 0;
+	  overflow: auto;
+	  transition: max-height 0.2s ease-out;
+	  background-color: #f1f1f1;
+	}
+
 /*table*/
       
-
 /* automatic pagination? */
 
 /*TopNav Styling*/
