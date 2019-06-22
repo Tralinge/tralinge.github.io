@@ -1,8 +1,66 @@
-<div style="width:100%; margin:auto; text-align:center;">
-	<h2>Level 1 - Short Phonics Stories</h2>
+---
+layout: default
+title: English Stories | Tralinge
+---
+<div style="margin:auto; text-align:center;">
+	<h1>English Stories</h1>
 </div>
+
+<div style="display:flex; flex-wrap:wrap; margin:auto;">
+	<div style="max-width:500px; margin:auto; margin-top:0px;">
+		<h2>Learn Through Stories!</h2>
+    	<p>
+            Stories can be one of the best methods for learning a language. By reading stories, 
+            you can move at your own pace, immersed in the culture while emphasizing with the 
+            characters. Best of all, there is almost limitless material for any level, from 
+            beginner to extremely advanced. What are you waiting for? Browse some of these 
+            stories or pick up a book today!
+        </p>
+    </div>
     
-<div style="display:flex; flex-wrap:wrap; max-width:1000px; margin:auto;">
+    <div style="max-width:500px; margin:auto;">
+    	<p style="font-size:1.2em; font-weight:bold; ">
+        	Learn at your pace!<br><br>
+			Learn through the characters!<br><br>
+			Limitless material to expand vocabulary!<br><br>
+			Make stronger connections with greater context! 
+        </p>
+    </div>
+</div>
+
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+
+
+<p>Level 1 - Short Phonics Stories</p>
+<button class="collapsible">Open Collapsible</button>
+<div class="content">
+	<div style="display:flex; flex-wrap:wrap; max-width:1000px; margin:auto;">
 	<div style="display:flex; flex-wrap:wrap; flex-direction:column; margin:auto; margin-top:0px;">
     	<div>
         	<a href="https://www.tralinge.com/english_corner/stories/shorts/vase_cave">
@@ -73,3 +131,28 @@
       	</div>
     </div>
 </div>    
+</div>
+
+<p>Level 2 - Phonics Stories</p>
+<button class="collapsible">Open Section 1</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
