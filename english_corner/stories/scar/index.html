@@ -2,40 +2,51 @@
 layout: default
 title: English Stories - Scar | Tralinge 
 ---
-{% include responsive.html %}
+<h1 style="text-align:center;">Scar the Scary Skeleton</h1>
 
-<body>
-    <h1>Scar the Scary Skeleton</h1>
-    
-    <div class="responsive">
-        <div class="gallery">
-        <a target="_blank" href="https://www.tralinge.com/english_corner/stories/scar/scar1of2.jpg">
-                <img src="https://www.tralinge.com/english_corner/stories/scar/scar1of2.jpg" alt="scar 1/2" width="400">
-        </a>
-        <div class="desc">Phonics Stories - sc/sk - Scar the Scary Skeleton 1/2</div>
-      </div>
-    </div>
+<div style="text-align:center;">
+    <audio controls>
+        <source src="https://www.tralinge.com/english_corner/stories/scar/scar.ogg" type="audio/ogg">
+        <source src="https://www.tralinge.com/english_corner/stories/scar/scar.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="https://www.tralinge.com/english_corner/stories/scar/scar2of2.jpg">
-                <img src="https://www.tralinge.com/english_corner/stories/scar/scar2of2.jpg" alt="scar 2/2" width="400">
-        </a>
-        <div class="desc">Phonics Stories - sc/sk - Scar the Scary Skeleton 2/2</div>
-      </div>
+<div style="display:flex; flex-wrap:wrap; width:100%; max-width:1000px; margin:auto;">
+    <!-- Flipbook to add later
+    <div style="margin:auto; margin-top:0px; width:100%; max-width:400px; text-align:center;">
+    <h2>Flipbook</h2>
+        <div>
+          <iframe style="height:350px; border-radius:15px;" src="https://s3.amazonaws.com/online.anyflip.com/ghmc/xewg/index.html"  
+                  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" >
+          </iframe>
+        </div>
     </div>
-    
-    <div class="responsive" style="clear: both;">
-        <audio controls>
-            <source src="https://www.tralinge.com/english_corner/stories/scar/scar.ogg" type="audio/ogg">
-            <source src="https://www.tralinge.com/english_corner/stories/scar/scar.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    -->
+
+    <!-- Coloring Pages -->
+    <div style="display:flex; flex-wrap:wrap; width:100%; max-width:450px; margin:auto; margin-top:0px; text-align:center;">
+        <h2 style="width:100%;">Coloring Pages</h2> 
+
+        <div style="margin:auto;">
+              <a target="_blank" href="https://www.tralinge.com/english_corner/stories/scar/scar1of2.jpg">
+                  <img class="picshad" src="https://www.tralinge.com/english_corner/stories/scar/scar1of2.jpg" 
+                       alt="scar 1/2" style="width:130px; border-radius:15px; padding:5px;">
+              </a>
+              <div class="desc">Part 1</div>
+        </div>
+        
+        <div style="margin:auto;">
+              <a target="_blank" href="https://www.tralinge.com/english_corner/stories/scar/scar2of2.jpg">
+                  <img class="picshad" src="https://www.tralinge.com/english_corner/stories/scar/scar2of2.jpg" 
+                       alt="scar 2/2" style="width:130px; border-radius:15px; padding:5px;">
+              </a>
+              <div class="desc">Part 2</div>
+        </div>
     </div>
-    
-    {% include story_links.html %}
-    
-    <div class="notecomments">
-        {% include disqus.html %}	 
-    </div>
-</body>
+</div> 
+
+{% include estory_links1.html %}
+{% include story_links.html %}
+
+{% include disqus.html %}
