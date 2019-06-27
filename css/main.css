@@ -77,13 +77,14 @@
 		margin-top:100px;
 		}
 
-	<!-- headings -->
+/* headings */
 	.subheading {
 		width:100%; 
 		text-align:center; 
 		background-color:#99ddff; 
 		border-radius:20px;
 		font-weight:bold;
+		font-size:1.5em;
 		}
 	.audioheading {
 		margin:15px; 
