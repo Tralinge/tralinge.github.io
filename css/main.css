@@ -76,9 +76,18 @@
 	.notecomments {
 		margin-top:100px;
 		}
+
+	<!-- headings -->
 	.subheading {
 		width:100%; 
 		text-align:center; 
+		background-color:#99ddff; 
+		border-radius:20px;
+		}
+	.audioheading {
+		margin:15px; 
+		font-size:1.5em; 
+		font-weight:bold; 
 		background-color:#99ddff; 
 		border-radius:20px;
 		}
