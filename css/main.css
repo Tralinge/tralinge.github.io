@@ -81,6 +81,7 @@
 		text-align:center; 
 		background-color:#99ddff; 
 		border-radius:20px;
+		display:flex;
 		}
 
 /* image buttons */
