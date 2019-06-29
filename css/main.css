@@ -101,6 +101,14 @@
   	.piclabel {
     	text-align:center; font-size:1.8em;
     	}
+	.picbox {
+		display:flex; 
+		flex-wrap:wrap; 
+		flex-direction:column; 
+		margin:auto; 
+		margin-top:0px; 
+		padding:10px;
+		}
 
 /* top nav dropdown */
     .topnav {
