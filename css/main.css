@@ -18,7 +18,9 @@
     body {
         margin: 10px auto;
         width: 90%;
-        }    
+        } 
+
+/* footer */
     footer ul { 
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         padding: 0px;
@@ -28,6 +30,12 @@
     footer li {
         font-weight: none;
         }
+	.footBox {
+		width:33%; 
+		max-width: 300px;
+		margin:auto; 
+		margin-top:0px;
+	}
     .vlink {
         font-size: 1.5em;
         line-height: 1.5em;
