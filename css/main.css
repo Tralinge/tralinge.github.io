@@ -13,8 +13,8 @@
         }
     .motto{
         font-family: "Segoe UI, Arial, san-serif";
-            font-size: 1.5em;
-            }
+		font-size: 1.5em;
+		}
     body {
         margin: 10px auto;
         width: 90%;
@@ -26,7 +26,6 @@
         line-height: 1.2;
         }
     footer li {
-        font-size: 0.8em;
         font-weight: none;
         }
     .vlink {
