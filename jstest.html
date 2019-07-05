@@ -29,9 +29,9 @@ title: js test
 	mouseClicked = function() {
 	var centerX = mouseX;
 	var centerY = mouseY;
-	var bodyLength = 50 + mouseX / 10;
-	var bodyHeight = 20+ mouseX / 8;
-	var bodyColor = color(mouseX, mouseY, 50);
+	var bodyLength = 30 + mouseX / (1 + Math.random() * 100);
+	var bodyHeight = 10 + mouseY / (1 + Math.random() * 40);
+	var bodyColor = color(mouseX - (1 + Math.random() * 200), mouseY / 2, 1 + Math.random() * 255);
 
 	noStroke();
 	fill(bodyColor);
