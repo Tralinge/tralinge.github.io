@@ -1,0 +1,30 @@
+background(89, 216, 255);
+
+mouseClicked = function() {
+var centerX = mouseX;
+var centerY = mouseY;
+var bodyLength = 50 + mouseX / 10;
+var bodyHeight = 20+ mouseX / 8;
+var bodyColor = color(mouseX, mouseY, 255);
+
+noStroke();
+fill(bodyColor);
+// body
+fill(bodyColor);
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/1-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+
+ellipse(centerX, centerY,bodyLength, bodyHeight);
+// tail
+var tailLength = bodyLength/7;
+var tailHeight = bodyHeight/5;
+triangle(centerX-bodyLength/-1,centerY, centerX-bodyLength/-5-tailWidth, centerY-tailHeight, centerX-bodyLength/-2-tailWidth, centerY + tailHeight);
+ fill(3, 3, 3);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/3);
+         
+};         
