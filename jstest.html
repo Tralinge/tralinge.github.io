@@ -1,44 +1,41 @@
----
-layout: default
-title: js test
----
-<div>
-         
- Fish Pond<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        
-         
+<html> 
+ <head>
+    <title>Processing.JS inside Webpages: Template</title> 
+</head>
+ <body>
+    <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
+    </p>
+ </body>
+ 
+ <!-- Run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+ <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ 
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+        
+        // ProgramCodeGoesHere
+        fill(255, 255, 0);
+        ellipse(200, 200, 200, 200);
+        noFill();
+        stroke(0, 0, 0);
+        strokeWeight(2);
+        arc(200, 200, 150, 100, 0, PI);
+        fill(0, 0, 0);
+        ellipse(250, 200, 10, 10);
+        ellipse(153, 200, 10, 10);
+    }};
 
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
 
-
-<script>
-background(89, 216, 255);
-
-mouseClicked = function() {
-var centerX = mouseX;
-var centerY = mouseY;
-var bodyLength = 50 + mouseX / 10;
-var bodyHeight = 20+ mouseX / 8;
-var bodyColor = color(mouseX, mouseY, 255);
-
-noStroke();
-fill(bodyColor);
-// body
-fill(bodyColor);
-ellipse(centerX, centerY, bodyLength, bodyHeight);
-// tail
-var tailWidth = bodyLength/4;
-var tailHeight = bodyHeight/2;
-triangle(centerX-bodyLength/2, centerY,
-         centerX-bodyLength/1-tailWidth, centerY-tailHeight,
-         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
-
-ellipse(centerX, centerY,bodyLength, bodyHeight);
-// tail
-var tailLength = bodyLength/7;
-var tailHeight = bodyHeight/5;
-triangle(centerX-bodyLength/-1,centerY, centerX-bodyLength/-5-tailWidth, centerY-tailHeight, centerX-bodyLength/-2-tailWidth, centerY + tailHeight);
- fill(3, 3, 3);
-ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/3);
-
-};       
-</script>
-</div>
+</html>
