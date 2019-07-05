@@ -26,7 +26,7 @@ title: js test
 
 	// Program
 	background(89, 216, 255);
-	mouseClicked = function() {
+        mouseClicked = function() {
 	var centerX = mouseX;
 	var centerY = mouseY;
 	var bodyLength = 30 + mouseX / (1 + Math.random() * 100);
@@ -42,16 +42,17 @@ title: js test
 	var tailWidth = bodyLength/4;
 	var tailHeight = bodyHeight/2;
 	triangle(centerX-bodyLength/2, centerY,
-	centerX-bodyLength/1-tailWidth, centerY-tailHeight,
-	centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+		 centerX-bodyLength/1-tailWidth, centerY-tailHeight,
+		 centerX-bodyLength/2-tailWidth, centerY+tailHeight);
 
 	ellipse(centerX, centerY,bodyLength, bodyHeight);
 	// tail
 	var tailLength = bodyLength/7;
 	var tailHeight = bodyHeight/5;
 	triangle(centerX-bodyLength/-1,centerY, centerX-bodyLength/-5-tailWidth, centerY-tailHeight, centerX-bodyLength/-2-tailWidth, centerY + tailHeight);
-	fill(3, 3, 3);
+	 fill(3, 3, 3);
 	ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/3);
+
 
 	};
 	}};
