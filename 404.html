@@ -2,27 +2,71 @@
 layout: default
 title: Where?
 ---
-<h1>Page Does Not Exist (404 error)</h1>
-
-<div>
-	<img src="http://www.tralinge.com/media/background/Rasta Bear.png" alt="Rasta Yanglin" width="500" 
-	     style="float: left; margin-right: 20px;">
-</div>
+<h1 style="text-align:center;">Page Does Not Exist (404 error)</h1>
 
 <div>		
-	<p style="font-size: 26px;">The page you are looking for does not exist or is broken. Sorry for the inconvenience. 
-	Here is a picture and some lyrics I wrote. Please enjoy and then use the links on
-	this page to get you back to the correct page.</p>
+	<p style="font-size: 1.8em;">The page you are looking for does not exist or is broken. Sorry for the inconvenience. 
+	Rasta Bear is not happy either - she can't find any fish! Click in the water to add some fish and then use the links to get you back to the correct page.</p>
 </div>
 
-<div>
-	<pre style="font-size: 20px;">
-	Check it - My name is Yanglin, 
-	I come from Badalin, I'm not so mean... 
+<div style="display:flex; flex-wrap:wrap; justify-content:center;">
+	<div>
+        <img src="http://www.tralinge.com/media/background/rastabearfish.png" alt="Rasta Bear Fishing"
+        	width="600" style="border-radius: 15px;">
+	</div>
+    
+    <div>
+        <p style="width: 100%; max-width:1000px; margin:auto; display:flex;">
+            <canvas id="mycanvas" style="margin:auto; border-radius: 15px;"></canvas> 
+        </p>
+        
+        <div style="font-size:2em; text-align:center;">
+			^ Click in the box! ^
+        </div>
+    </div>
+</div>
 
-	Some people call me Rasta Bear, 
-	I have so much colorful hair,
-	I could go anywhere...
-	</pre>
-</div>   
-<div style="clear: both;"></div>
+<!-- Run all the JavaScript stuff -->
+<!-- Include the processing.js library -->
+<!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+
+<script>
+	var sketchProc = function(processingInstance) {
+		with (processingInstance) {
+			size(400, 276); 
+			frameRate(30);
+			// Program
+			background(89, 216, 255);
+			mouseClicked = function() {
+				var centerX = mouseX;
+				var centerY = mouseY;
+				var bodyLength = 30 + mouseX / (1 + Math.random() * 100);
+				var bodyHeight = 10 + mouseY / (1 + Math.random() * 40);
+				var bodyColor = color(mouseX - (1 + Math.random() * 200), mouseY / 2, 1 + Math.random() * 255);
+				noStroke();
+				fill(bodyColor);
+				// body
+				fill(bodyColor);
+				ellipse(centerX, centerY, bodyLength, bodyHeight);
+				// tail
+				var tailWidth = bodyLength/4;
+				var tailHeight = bodyHeight/2;
+				triangle(centerX-bodyLength/2, centerY,
+					 centerX-bodyLength/1-tailWidth, centerY-tailHeight,
+					 centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+				ellipse(centerX, centerY,bodyLength, bodyHeight);
+				// tail
+				var tailLength = bodyLength/7;
+				var tailHeight = bodyHeight/5;
+				triangle(centerX-bodyLength/-1,centerY, centerX-bodyLength/-5-tailWidth, centerY-tailHeight, centerX-bodyLength/-2-tailWidth, centerY + tailHeight);
+				fill(3, 3, 3);
+				ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/3);
+			};
+		}
+	};
+	// Get the canvas that Processing-js will use
+	var canvas = document.getElementById("mycanvas"); 
+	// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+	var processingInstance = new Processing(canvas, sketchProc); 
+</script>
