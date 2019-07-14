@@ -5,7 +5,7 @@ title: Say Whaaa?
 <h1 style="text-align:center;">Page Does Not Exist (404 error)</h1>
 
 <div>		
-	<p style="font-size: 1.8em;">
+	<p style="font-size: 1.8em; width:100%; max-width:1000px; margin:auto;">
 		The page you are looking for does not exist or is broken. Sorry for the inconvenience. 
 		Rasta Bear is not happy either - she can't find any fish! Click in the water to add some 
 		fish and then use the links to get back to the correct page.
@@ -15,17 +15,13 @@ title: Say Whaaa?
 <div style="display:flex; flex-wrap:wrap; justify-content:center;">
 	<div>
         <img src="http://www.tralinge.com/media/background/rastabearfish.png" alt="Rasta Bear Fishing"
-        	style="width:100%; max-width:600px; border-radius: 15px;">
+        	style="width:100%; max-width:550px; border-radius: 15px;">
 	</div>
     
-    <div style="width:100%;">
-        <p style="width: 100%; max-width:1000px; margin:auto; display:flex;">
+    <div>
+        <p style="width: 100%; max-width:400px; margin:auto; display:flex;">
             <canvas id="mycanvas" style="margin:auto; border-radius: 15px;"></canvas> 
         </p>
-        
-        <div style="font-size:2em; text-align:center; width:100%;">
-			^ Click in the box! ^
-        </div>
     </div>
 </div>
 
@@ -37,10 +33,12 @@ title: Say Whaaa?
 <script>
 	var sketchProc = function(processingInstance) {
 		with (processingInstance) {
-			size(400, 276); 
+			size(400, 253); 
 			frameRate(30);
 			// Program
 			background(89, 216, 255);
+            textSize(30);
+            text("Click Here", 130, 120);
 			mouseClicked = function() {
 				var centerX = mouseX;
 				var centerY = mouseY;
