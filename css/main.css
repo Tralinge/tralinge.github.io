@@ -20,7 +20,7 @@
         width: 90%;
         } 
 
-/* footer */
+	/* footer */
     footer ul { 
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         padding: 0px;
@@ -28,14 +28,17 @@
         line-height: 1.2;
         }
     footer li {
-        font-weight: none;
+        font-weight: normal;
         }
+	footer a {
+		font-weight:normal;
+		}
 	.footBox {
 		width:33%; 
 		max-width: 300px;
 		margin:auto; 
 		margin-top:0px;
-	}
+		}
     .vlink {
         font-size: 1.5em;
         line-height: 1.5em;
@@ -134,6 +137,7 @@
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
+		font-weight:normal;
         }
 
     .active {
