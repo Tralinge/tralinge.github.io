@@ -29,12 +29,6 @@
     </url>
     
     <url>
-        <loc>https://www.tralinge.com/english_corner/worksheets</loc>
-        <priority>0.60</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    
-    <url>
         <loc>https://www.tralinge.com/english_corner/etymology</loc>
         <priority>0.10</priority>
         <changefreq>monthly</changefreq>
