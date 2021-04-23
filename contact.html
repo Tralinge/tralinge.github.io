@@ -2,69 +2,19 @@
 layout: default
 title: Contact | Tralinge 
 ---
- <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-    * {box-sizing: border-box;}
-
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }
-
-    input[type=email], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }    
-    
-    input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-
-    .container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-
-  <h3>Contact Form - or write us at tralinge@gmail.com</h3>
-
-  <div class="container">
-    <form action="https://formspree.io/contact@tralinge.com" method="POST" />
-      <label>Name</label>
-      <input type="text" name="name" placeholder="Your name">
-
-      <label>Contact Info (optional)</label>
-      <input type="email" name="_replyto" placeholder="Your e-mail">
-        
-      <label>Comment</label>
-      <textarea name="body" placeholder="Write something..." style="height:200px"></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</body>
-
+ <form 
+	id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post"
+  action="https://formspree.io/f/xoqyvrgp"
+  method="POST">
+	 
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Name</label>
+    <input type="text" name="name" id="full-name" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Send">
+</form>
