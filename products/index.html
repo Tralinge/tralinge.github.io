@@ -8,7 +8,7 @@ title: Learning Products | Tralinge
 
 <div style="display:flex; flex-wrap:wrap; margin:auto;">
 	<div style="display:flex; flex-wrap:wrap; margin:auto;">
-		<div style="margin:auto; max-width:500px; background-color:green">
+		<div style="margin:auto; max-width:500px;">
 			<style>
 
 				* {
@@ -87,10 +87,10 @@ title: Learning Products | Tralinge
 				.demo:hover {
 				  opacity: 1;
 				}
-				</style>
-				<body>
-
-				<h2 style="text-align:center">Slideshow Gallery</h2>
+			</style>
+                
+			<body>
+				<h2 style="text-align:center">Chinese Pinyin Activity Book</h2>
 
 				<div class="container">
 				  <div class="mySlides">
@@ -153,38 +153,37 @@ title: Learning Products | Tralinge
 				</div>
 
 				<script>
-				var slideIndex = 1;
-				showSlides(slideIndex);
+					var slideIndex = 1;
+					showSlides(slideIndex);
 
-				function plusSlides(n) {
-				  showSlides(slideIndex += n);
-				}
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
 
-				function currentSlide(n) {
-				  showSlides(slideIndex = n);
-				}
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
 
-				function showSlides(n) {
-				  var i;
-				  var slides = document.getElementsByClassName("mySlides");
-				  var dots = document.getElementsByClassName("demo");
-				  if (n > slides.length) {slideIndex = 1}
-				  if (n < 1) {slideIndex = slides.length}
-				  for (i = 0; i < slides.length; i++) {
-					  slides[i].style.display = "none";
-				  }
-				  for (i = 0; i < dots.length; i++) {
-					  dots[i].className = dots[i].className.replace(" active", "");
-				  }
-				  slides[slideIndex-1].style.display = "block";
-				  dots[slideIndex-1].className += " active";
-				}
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("demo");
+					  if (n > slides.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						  slides[i].style.display = "none";
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						  dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " active";
+					}
 				</script>
-
-				</body>
-					</div>
+			</body>
+		</div>
     
-    <div style="margin:auto; max-width:500px; background-color:blue;">
+    <div style="margin:auto; margin-top:20px; max-width:500px;">
     	<div>
     		Title
         </div>
@@ -196,32 +195,31 @@ title: Learning Products | Tralinge
 		euismod semper. 
         </div>
         
-        <div>
+        <div style="background-color:red;">
     		Buy Button!!!
         </div>
-    </div>
-</div>
 
+        <div>
+          	Product Description	- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel placerat 
+            risus, sit amet consequat dui. Vestibulum cursus nibh et dui ultricies, sit amet consequat augue 
+            euismod. Phasellus pretium efficitur scelerisque. In ac lacus at urna euismod semper. Lorem ipsum 
+            dolor sit amet, consectetur adipiscing elit. Suspendisse vel placerat risus, sit amet consequat 
+            dui. Vestibulum cursus nibh et dui ultricies, sit amet consequat augue euismod. Phasellus pretium 
+            efficitur scelerisque. In ac lacus at urna euismod semper. 
+        </div>
+    
+		<div style="max-width:1000px; min-width:200px; display:flex; flex-wrap:wrap; margin:auto;">    
+			<div style="margin:auto; max-width:400px; background-color:purple;">
+				Reviews - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel placerat risus, 
+				sit amet consequat dui. <br><br>
 
-  <div style="max-width:1000px; min-width:200px; margin:auto; background-color:yellow;">
-    Product Description	- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel placerat 
-	  risus, sit amet consequat dui. Vestibulum cursus nibh et dui ultricies, sit amet consequat augue 
-	  euismod. Phasellus pretium efficitur scelerisque. In ac lacus at urna euismod semper. Lorem ipsum 
-	  dolor sit amet, consectetur adipiscing elit. Suspendisse vel placerat risus, sit amet consequat 
-	  dui. Vestibulum cursus nibh et dui ultricies, sit amet consequat augue euismod. Phasellus pretium 
-	  efficitur scelerisque. In ac lacus at urna euismod semper. 
-  </div>
+				Vestibulum cursus nibh et dui ultricies, sit amet consequat augue euismod. Phasellus pretium efficitur 
+				scelerisque. In ac lacus at urna euismod semper. 
+			</div>
     
-<div style="max-width:1000px; min-width:200px; display:flex; flex-wrap:wrap; margin:auto;">    
-    <div style="margin:auto; max-width:400px; background-color:purple;">
-    	Reviews - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel placerat risus, 
-	    sit amet consequat dui. <br><br>
-        
-        Vestibulum cursus nibh et dui ultricies, sit amet consequat augue euismod. Phasellus pretium efficitur 
-	    scelerisque. In ac lacus at urna euismod semper. 
-    </div>
-    
-    <div style="margin:auto; max-width:400px; background-color:red;">
-    	Buy Button<br>
-    </div>
+			<div style="margin:auto; max-width:100px; background-color:red;">
+				Buy Button<br>
+			</div>
+		</div>
+	</div>
 </div>
